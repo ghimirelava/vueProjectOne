@@ -1,5 +1,6 @@
 <template>
   <h1 @click="handleHeadingClick"> My name is {{ name }}, I am {{ age }} years old.</h1>
+  <MyButton />
 </template>
 
 <!-- script setup pattern example -->
@@ -7,6 +8,9 @@
 
 //ref function that creates a reactive reference to a val
 import { ref } from 'vue'
+
+//importing a child component from components files
+import MyButton from '@/components/MyButton.vue'
 
 const name = ref('Lava')
 const age = ref(24)
