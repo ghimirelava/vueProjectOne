@@ -1,6 +1,6 @@
 <template>
     
-    <button @click = "$emit('buttonClicked')"> {{ props.title }} </button>
+    <button @click = "handleButtonClicked"> {{ props.title }} </button>
 </template>
 
 <script setup>
@@ -15,6 +15,10 @@ const props = defineProps({
 }) 
 
 const emit = defineEmits(['busttonClicked'])
+
+const handleButtonClicked = () => {
+    emit('buttonClicked')
+}
 
 //must use props.title to acces the prop in script
 console.log(props.title)
