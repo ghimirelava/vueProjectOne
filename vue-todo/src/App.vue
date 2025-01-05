@@ -1,6 +1,6 @@
 <template>
   <h1 @click="handleHeadingClick"> My name is {{ name }}, I am {{ age }} years old.</h1>
-  <MyButton />
+  <MyButton title = "My Button Title"/>
 </template>
 
 <!-- script setup pattern example -->
