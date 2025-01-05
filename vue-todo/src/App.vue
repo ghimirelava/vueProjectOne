@@ -1,6 +1,9 @@
 <template>
   <h1 @click="handleHeadingClick"> My name is {{ name }}, I am {{ age }} years old.</h1>
-  <MyButton title = "My Button Title"/>
+  <MyButton 
+    @buttonClicked = "ShowAlert"
+    title = "My Button Title"
+  />
 </template>
 
 <!-- script setup pattern example -->
@@ -19,5 +22,9 @@ const age = ref(24)
 const handleHeadingClick = () => {
   name.value = 'Steve'
   age.value = 27
+}
+
+const ShowAlert = () => {
+  alert('Child button was clicked!')
 }
 </script>
