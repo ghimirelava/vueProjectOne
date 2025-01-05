@@ -1,5 +1,5 @@
 <template>
-    <button> {{ title }} </button>
+    <button> {{ props.title }} </button>
 </template>
 
 <script setup>
@@ -12,4 +12,6 @@ const props = defineProps({
         default: "No title added"
     }
 }) 
+//must use props.title to acces the prop in script
+console.log(props.title)
 </script>
