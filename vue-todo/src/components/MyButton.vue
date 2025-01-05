@@ -17,7 +17,7 @@ const props = defineProps({
 const emit = defineEmits(['busttonClicked'])
 
 const handleButtonClicked = () => {
-    emit('buttonClicked')
+    emit('buttonClicked', 29)
 }
 
 //must use props.title to acces the prop in script

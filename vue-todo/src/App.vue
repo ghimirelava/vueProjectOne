@@ -24,7 +24,8 @@ const handleHeadingClick = () => {
   age.value = 27
 }
 
-const ShowAlert = () => {
-  alert('Child button was clicked!')
+const ShowAlert = newAge => {
+  //alert('Child button was clicked!')
+  age.value = newAge
 }
 </script>
