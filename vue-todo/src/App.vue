@@ -1,5 +1,5 @@
 <template>
-  <h1> My name is {{ name }}, I am {{ age }} years old.</h1>
+  <h1 @click="handleHeadingClick"> My name is {{ name }}, I am {{ age }} years old.</h1>
 </template>
 
 <!-- script setup pattern example -->
@@ -11,4 +11,9 @@ import { ref } from 'vue'
 const name = ref('Lava')
 const age = ref(24)
 
+//method changes the ref vals updating the template
+const handleHeadingClick = () => {
+  name.value = 'Steve'
+  age.value = 27
+}
 </script>
